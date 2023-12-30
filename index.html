@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Jatim</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My style -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+      
+
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Amazing<span>Jatim</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#tour">Wisata</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+    <!-- Search Form Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    <!-- Search Form End -->
+
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1><span>Amazing</span> <br />Jawa Timur</h1>
+        <p>Ayo berkunjung ke Jawa Timur dan nikmati <br />keindahannya</p>
+        <a href="#tour" class="cta">Lihat Wisata</a>
+      </main>
+    </section>
+    <!-- Hero Section End-->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Jawa Timur</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Harus Berkunjung Ke Jawa Timur?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            similique cum sint odit, impedit aliquam?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio
+            doloribus vitae reprehenderit quod! Delectus rem neque iste commodi
+            placeat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Tour Section Start -->
+    <section id="tour" class="tour">
+      <h2><span>Wisata</span> Jawa Timur</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptas ipsa
+        nulla facere eum soluta.
+      </p>
+      <div class="row">
+        <div class="tour-card">
+          <img src="img/wisata/1.jpg" alt="Ijen" class="tour-card-img" />
+          <h3 class="tour-card-title">Kawah Ijen</h3>
+          <p class="tour-card-area">Kab.Banyuwangi</p>
+          <button onclick="openModal(1)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/2.jpg" alt="Bromo" class="tour-card-img" />
+          <h3 class="tour-card-title">Bromo</h3>
+          <p class="tour-card-area">Kab.Malang</p>
+          <button onclick="openModal(2)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/3.jpg" alt="Baluran" class="tour-card-img" />
+          <h3 class="tour-card-title">Taman Nasional Baluran</h3>
+          <p class="tour-card-area">Kab.Situbondo</p>
+          <button onclick="openModal(3)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/4.jpg" alt="TumpakSewu" class="tour-card-img" />
+          <h3 class="tour-card-title">Air Terjun Tumpak Sewu</h3>
+          <p class="tour-card-area">Kab.Lumajang</p>
+          <button onclick="openModal(4)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/5.jpg" alt="Papuma" class="tour-card-img" />
+          <h3 class="tour-card-title">Papuma</h3>
+          <p class="tour-card-area">Kab.Jember</p>
+          <button onclick="openModal(5)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/6.jpg" alt="PulauMerah" class="tour-card-img" />
+          <h3 class="tour-card-title">Pulau Merah</h3>
+          <p class="tour-card-area">Kab.Banyuwangi</p>
+          <button onclick="openModal(6)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/7.jpg" alt="Singosari" class="tour-card-img" />
+          <h3 class="tour-card-title">Candi Singosari</h3>
+          <p class="tour-card-area">Kab.Malang</p>
+          <button onclick="openModal(7)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/8.jpg" alt="Klayar" class="tour-card-img" />
+          <h3 class="tour-card-title">Pantai Klayar</h3>
+          <p class="tour-card-area">Kab.Pacitan</p>
+          <button onclick="openModal(8)">Lihat Detail</button>
+        </div>
+        <div class="tour-card">
+          <img src="img/wisata/9.jpg" alt="Gong" class="tour-card-img" />
+          <h3 class="tour-card-title">Goa Gong</h3>
+          <p class="tour-card-area">Kab.Pacitan</p>
+          <button onclick="openModal(9)">Lihat Detail</button>
+        </div>
+      </div>
+    </section>
+    <!-- Tour Section end -->
+
+        <!-- Modal Box Item Detail Start -->
+    <!-- wisata 1 -->
+    <div id="overlay1"></div>
+      <div class="modal" id="modal1">
+        <div class="modal-container">
+          <a href="#" class="close-icon1"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31603.343506504745!2d114.23211337108906!3d-8.058780593689747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd149f2110ae607%3A0x7c04ef029d5e39bc!2sGn.%20Ijen!5e0!3m2!1sid!2sid!4v1703394427942!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content"> 
+            <h1><span>TENTANG</span> KAWAH IJEN</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!-- wisata 2 -->
+    <div id="overlay2"></div>
+      <div class="modal" id="modal2">
+        <div class="modal-container">
+          <a href="#" class="close-icon2"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> GUNUNG BROMO</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wisata 3 -->
+    <div id="overlay3"></div>
+      <div class="modal" id="modal3">
+        <div class="modal-container">
+          <a href="#" class="close-icon3"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> TAMAN NASIONAL BALURAN</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wisata 4 -->
+    <div id="overlay4"></div>
+      <div class="modal" id="modal4">
+        <div class="modal-container">
+          <a href="#" class="close-icon4"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> AIR TERJUN TUMPAK SEWU</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wisata 5 -->
+    <div id="overlay5"></div>
+      <div class="modal" id="modal5">
+        <div class="modal-container">
+          <a href="#" class="close-icon5"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> PAPUMA</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wisata 6 -->
+    <div id="overlay6"></div>
+      <div class="modal" id="modal6">
+        <div class="modal-container">
+          <a href="#" class="close-icon6"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> PULAU MERAH</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wisata 7 -->
+    <div id="overlay7"></div>
+      <div class="modal" id="modal7">
+        <div class="modal-container">
+          <a href="#" class="close-icon7"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> CANDI SINGOSARI</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wisata 8 -->
+    <div id="overlay8"></div>
+      <div class="modal" id="modal8">
+        <div class="modal-container">
+          <a href="#" class="close-icon8"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> PANTAI KLAYAR</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wisata 9 -->
+    <div id="overlay9"></div>
+      <div class="modal" id="modal9">
+        <div class="modal-container">
+          <a href="#" class="close-icon9"><i data-feather="x-circle"></i></a>
+          <div class="modal-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.363395777997!2d112.93241247095298!3d-7.942450438789107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1703490977048!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="wisata-content">
+            <h1><span>TENTANG</span> GOA GONG</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, commodi consequuntur amet libero dolore itaque non explicabo molestiae ducimus assumenda eos culpa obcaecati doloribus soluta et hic tempora. Veniam, corporis?</p>
+            <h2>Alamat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail End -->
+
+    <!-- Contact Section Start-->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptas ipsa
+        nulla facere eum soluta.
+      </p>
+
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505392.7723234187!2d113.3237794177661!3d-8.264818399824094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd690a7abde8777%3A0xdeb6730c83a3dd2e!2sKabupaten%20Jember%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1703684327758!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <form id="contact-form">
+            
+            
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" name="name">
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="email" name="email">
+          </div>
+          <div class="input-grouptext">
+            <textarea id="message" name="message" placeholder="pesan" required></textarea><br>
+          </div>
+          <button type="submit" class="btn">Kirim</button>
+            
+            
+        </form>
+      </div>
+    
+        <!-- Loading Overlay -->
+        <div id="loading-overlay">
+            <div id="loading-spinner"></div>
+        </div>
+    
+        <!-- Popup -->
+        <div id="popup">
+            <p>Pesan Anda Terkirim!</p>
+            <button onclick="closePopup()">Tutup</button>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End-->
+
+    <!-- Footer Section Start-->
+    <footer>
+      <div class="sosial">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#tour">Wisata</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Kelompok 3</a>. | &copy; 2023</p>
+      </div>
+    </footer>
+    <!-- Footer Section Start-->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
+
+
+
