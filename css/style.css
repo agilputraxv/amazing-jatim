@@ -383,6 +383,7 @@ textarea {
 #modal9 {
   display: none;
   position: fixed;
+  height: 100%;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
@@ -451,8 +452,9 @@ textarea {
 }
 
 .modal-content iframe {
-  height: 25rem;
-  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .modal-content p {
@@ -476,6 +478,14 @@ textarea {
   color: #000;
   margin-top: 1rem;
   padding-left: 1rem;
+}
+
+.modal-content img {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  width: 20%;
+  max-width: auto;
+  border-radius: 10%;
 }
 
 /*  Footer Start */
@@ -663,6 +673,10 @@ footer .credit p {
   }
 
   .modal-content {
+    flex-wrap: wrap;
+  }
+
+  .modal-content img {
     flex-wrap: wrap;
   }
 }
