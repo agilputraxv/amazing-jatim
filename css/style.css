@@ -389,7 +389,7 @@ textarea {
   z-index: 1;
 }
 
-        /* Style untuk overlay modal pertama */
+/* Style untuk overlay modal pertama */
 #overlay1,
 #overlay2,
 #overlay3,
@@ -459,10 +459,10 @@ textarea {
 
 .modal-content p {
   font-size: 1.2rem;
-  line-height: 1.8;
   margin-top: 0.2rem;
   color: #000;
   padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .modal-content h1 {
@@ -482,7 +482,7 @@ textarea {
 
 .modal-content img {
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   width: 20%;
   max-width: auto;
   border-radius: 10%;
