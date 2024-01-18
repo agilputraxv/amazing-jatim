@@ -144,6 +144,35 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  animation: change 25s infinite ease-in-out;
+}
+
+@keyframes change {
+  10%
+  {
+    background-image: url("../img/bg1.jpg");
+  }
+  20%
+  {
+    background-image: url("../img/bg3.jpg");
+  }
+  40%
+  {
+    background-image: url("../img/bg2.jpg");
+  }
+  60%
+  {
+    background-image: url("../img/bg4.jpg");
+  }
+  80%
+  {
+    background-image: url("../img/bg5.jpg");
+  }
+  100%
+  {
+    background-image: url("../img/bg1.jpg");
+  }
+  
 }
 
 .hero::after {
